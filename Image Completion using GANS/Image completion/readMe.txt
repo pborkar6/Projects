@@ -6,7 +6,7 @@ post_processing - superimposes the generated image strips on the incomplete imag
 
 
 
-The final design is chosen based on the pix2pix paper. I’ve trained GANs for an assignment and I have first hand knowledge that DC-GANs are very hard to train, especially on larger images. Mode collapse is common. So, though I found some papers which used DC-GANs for image inpainting, I chose conditional GANs, since the pix2pix paper states that the model works well with small datasets also. 
+The final design is chosen based on the pix2pix paper. So, though I found some papers which used DC-GANs for image inpainting, I chose conditional GANs, since the pix2pix paper states that the model works well with small datasets also. 
 
 Our generator is an auto encoder, with 7 layers in encoder and 7 layers in decoder. The paper stated the stride length is 2. Since we used an image size of 128 x 128, we adjusted the number of layers accordingly. 
 
